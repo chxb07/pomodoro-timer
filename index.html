@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Pomodoro Timer</title>
+    <link rel="shortcut icon" href="index.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pomodoro Timer</h1>
+            <p class="tagline">Futuristic Focus Timer • Enhanced Productivity</p>
+        </header>
+
+        <main>
+            <div class="timer-container">
+                <div class="timer-display" id="time">25:00</div>
+                <div class="status" id="status">Ready</div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress"></div>
+                </div>
+                
+                <div class="controls">
+                    <button class="start" id="startBtn">Start</button>
+                    <button id="pauseBtn">Pause</button>
+                    <button class="reset" id="resetBtn">Reset</button>
+                </div>
+
+                <div class="pomo-count" id="pomoCount">
+                    <!-- Pomodoro dots will be added here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="settings">
+                <h2>Timer Settings</h2>
+                
+                <div class="setting-group">
+                    <div class="setting-row">
+                        <label for="pomoDuration">Pomodoro (mins):</label>
+                        <input type="number" id="pomoDuration" min="1" max="60" value="25">
+                    </div>
+                    
+                    <div class="setting-row">
+                        <label for="shortBreak">Short Break (mins):</label>
+                        <input type="number" id="shortBreak" min="1" max="15" value="5">
+                    </div>
+                    
+                    <div class="setting-row">
+                        <label for="longBreak">Long Break (mins):</label>
+                        <input type="number" id="longBreak" min="1" max="30" value="15">
+                    </div>
+                    
+                    <div class="setting-row">
+                        <label for="pomosBeforeLong">Pomodoros before long break:</label>
+                        <input type="number" id="pomosBeforeLong" min="1" max="10" value="4">
+                    </div>
+                    
+                    <div class="setting-row">
+                        <label for="autoStart">Auto-start breaks:</label>
+                        <div class="switch">
+                            <input type="checkbox" id="autoStart">
+                            <span class="slider"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Pomodoro Timer &copy; 2025 • The futuristic productivity tool</p>
+        </footer>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
